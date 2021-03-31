@@ -1,3 +1,35 @@
-body {
-    background: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', 'sans-serif';
+
+}
+
+header {
+    background-color: yellow;
+}
+
+.article {
+    background-color: red;
+    border: blue 2px solid;
+
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.article_1 {
+    background-color: green;
+}
+
+#header {
+    background-color: green;
+    min-width: 100px;
+    max-width: 300px;
 }
