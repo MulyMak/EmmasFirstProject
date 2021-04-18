@@ -1,98 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-* {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1;
-    outline: none;
-    text-decoration: none;
-    list-style: none;
-    font-size: 16px;
-}
-img {
-    vertical-align: text-top;
-}
-
-header{
+header {
     width: 100vw;
     background-color: #4d636f;
     height: 50px;
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
 }
-ul {
+
+header ul {
     display: flex;
     height: 100%;
     max-width: 1600px;
     margin: 0 auto;
 }
-li {
 
-}
-
-li a{
+header li a {
     padding: 12px 24px;
     height: 100%;
     display: flex;
     align-items: center;
 }
-li:first-child {
+
+header li:first-child {
     background-color: #3a4b53;
 }
 
-li:hover {
+header li:hover {
     background-color: white;
 }
-li:first-child:hover {
+
+header li:first-child:hover {
     background-color: #ccc;
     color: black;
 }
-li:nth-last-child(2):hover {
-    background-color: #ccc;
-    }
-.dropdown {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-}
-.dropdown_content {
-    color: white;
-    font-size: 18px;
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    z-index: 1;
-}
-.dropdown_content a {
-   padding: 12px 16px;
-    display: block;
 
-}
-.dropdown-content a:hover {
+header li:nth-last-child(2):hover {
     background-color: #ccc;
 }
 
-.dropdown:hover .dropdown_button {
-    background-color: #ccc;
-}
-
-
-li img {
+header li img {
     height: 18px;
 }
 
-li span {
+header li span {
     font-size: 18px;
     color: white;
     margin-left: 16px;
 }
 
-li:last-child {
+header li:last-child {
     margin-left: auto;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ccc;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn span {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    height: 18px;
+    font-size: 12px;
+    padding: 0 8px;
+    line-height: 18px;
+    margin: -10px 0 0;
+}
+
+
+section.main {
+    margin: 80px auto 0;
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 3fr 7fr 2fr;
+    gap: 0 16px;
+    padding: 0 16px;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px 0;
+}
+
+.profile-card {
+    width: 100%;
+    padding: 10px 16px;
+}
+
+.profile-card .my-profile {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.prof-image {
+    width: 106px;
+    margin: 0 auto;
+    display: block;
+}
+
+.profile-card hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.profile-card .profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.profile-card .profile-info:last-child {
+    margin-bottom: 0;
+}
+
+.profile-card .profile-info svg{
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+    fill: #7d97a5;
+}
+
+.user-folders {
+    background-color: #fff;
+}
+
+.folder-card {
+    background-color: #7d97a5;
+    padding: 8px 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.folder-card:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.folder-card svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    fill: #fff;
+}
+
+.folder-card:hover svg {
+    fill: black;
+}
+
+.my-group-dropdown {
+    display: none;
+    width: 100%;
+}
+
+#my-group:checked + .my-group-dropdown {
+    display: block;
+}
+
+.my-events-dropdown {
+    display: none;
+    width: 100%;
+}
+
+#my-events:checked + .my-events-dropdown {
+    display: block;
+}
