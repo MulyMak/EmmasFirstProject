@@ -96,7 +96,7 @@ section.main {
     margin: 80px auto 0;
     max-width: 1600px;
     display: grid;
-    grid-template-columns: 2fr 7fr 2fr;
+    grid-template-columns: 2.5fr 7fr 2fr;
     gap: 0 16px;
     padding: 0 16px;
 }
@@ -164,6 +164,7 @@ section.main {
 .folder-card:hover {
     background-color: #ccc;
 }
+
 .folder-card:hover .my-group-btn {
     color: #000;
 }
@@ -214,9 +215,8 @@ section.main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 16px;
+    padding: 16px 16px 0;
     justify-content: center;
-    margin-top: 16px;
 }
 
 .my-photos-dropdown {
@@ -227,11 +227,14 @@ section.main {
 }
 
 .drop-img {
-    height: 64px;
-    width: 100px;
+    height: 70px;
+    width: 45%;
     margin-bottom: 16px;
     padding: 0 8px;
 }
+
+/*how to set a responsive size for the images?*/
+/*how to make the images clickable with links s as the parameters stay the same?*/
 
 #my-group:checked + label div.my-group-btn {
     background-color: #57707d;
@@ -243,4 +246,86 @@ section.main {
 
 #my-photos:checked + label div.my-group-btn {
     background-color: #57707d;
+}
+
+.interests-card {
+    padding: 0 16px;
+}
+
+.interest-boxes {
+    margin: 16px 0;
+}
+
+.boxes {
+    background-color: #303e45;
+    color: white;
+    display: inline-flex;
+    padding: 0 8px;
+    font-size: 12px;
+    width: fit-content;
+}
+
+/*should I give colors separately to all boxes if the color is different?*/
+
+.box2 {
+    background-color: #57707d;
+}
+
+.box3 {
+    background-color: #becbd2;
+    color: #000000;
+}
+
+.box4 {
+    background-color: #f5f7f8;
+    color: #000000;
+}
+
+.secondary-title {
+    font-weight: 400;
+    text-align: left;
+    margin: 16px 0;
+    gap: 8px;
+}
+/*.hey {*/
+/*    margin-top: 0;*/
+/*}*/
+
+.info-box {
+    background-color: #dfe5e8;
+    border: 1px solid #cccccc;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /*float: right;*/
+}
+
+.info-text {
+    padding: 0 16px;
+}
+
+.x-box {
+    width: 44px;
+    height: 38px;
+    background-color: #becbd2;
+    margin-left: auto;
+    display: block;
+    padding: 15px 16px;
+
+}
+
+svg.x {
+    width: 8px;
+    height: 8px;
+    display: block;
+    margin: 0px auto;
+    /*text-align: center;*/
+    /*padding: 8px 16px;*/
+}
+
+.x-box:hover {
+    background-color: #cccccc;
+}
+#x-button:checked  .info-box {
+    visibility: hidden;
 }
