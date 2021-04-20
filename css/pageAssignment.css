@@ -96,7 +96,7 @@ section.main {
     margin: 80px auto 0;
     max-width: 1600px;
     display: grid;
-    grid-template-columns: 3fr 7fr 2fr;
+    grid-template-columns: 2fr 7fr 2fr;
     gap: 0 16px;
     padding: 0 16px;
 }
@@ -142,28 +142,29 @@ section.main {
     margin-bottom: 0;
 }
 
-.profile-card .profile-info svg{
+.profile-card .profile-info svg {
     height: 16px;
     width: 16px;
     margin-right: 16px;
     fill: #7d97a5;
 }
 
-.user-folders {
-    background-color: #fff;
-}
+/*.user-folders {*/
+/*    background-color: #fff;*/
+/*}*/
 
-.folder-card {
-    background-color: #7d97a5;
-    padding: 8px 16px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/*.folder-card {*/
+/*    padding: 8px 16px;*/
+/*    color: #fff;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*}*/
 
 .folder-card:hover {
     background-color: #ccc;
+}
+.folder-card:hover .my-group-btn {
     color: #000;
 }
 
@@ -178,20 +179,68 @@ section.main {
     fill: black;
 }
 
+.my-group-btn {
+    background-color: #7d97a5;
+    padding: 8px 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#my-group:checked + label div.my-group-dropdown {
+    display: block;
+}
+
 .my-group-dropdown {
     display: none;
     width: 100%;
+    background-color: #fff;
+    padding: 16px;
 }
 
-#my-group:checked + .my-group-dropdown {
+#my-events:checked + label div.my-events-dropdown {
     display: block;
 }
 
 .my-events-dropdown {
     display: none;
     width: 100%;
+    background-color: #fff;
+    padding: 16px;
 }
 
-#my-events:checked + .my-events-dropdown {
-    display: block;
+#my-photos:checked + label div.my-photos-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 16px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.my-photos-dropdown {
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 16px;
+}
+
+.drop-img {
+    height: 64px;
+    width: 100px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+#my-group:checked + label div.my-group-btn {
+    background-color: #57707d;
+}
+
+#my-events:checked + label div.my-group-btn {
+    background-color: #57707d;
+}
+
+#my-photos:checked + label div.my-group-btn {
+    background-color: #57707d;
 }
