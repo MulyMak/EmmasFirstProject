@@ -281,6 +281,10 @@ section.main {
     color: #000000;
 }
 
+/*.interest-boxes:hover .boxes {*/
+/*    background-color: #cccccc;*/
+/*}*/
+
 .secondary-title {
     font-weight: 400;
     text-align: left;
@@ -328,4 +332,67 @@ svg.x {
 }
 #x-button:checked  .info-box {
     visibility: hidden;
+}
+
+
+.status-block {
+    width: 100%;
+    padding: 10px 16px;
+}
+
+h6.opacity-text {
+    color: #000000;
+    opacity: 0.6;
+    margin: 10px 0;
+    weig
+}
+ span.status-bar {
+     border: 1px solid #cccccc;
+     width: 100%;
+     display: block;
+     margin: 15px 0;
+     padding: 8px 16px;
+ }
+
+.postbtn {
+    height: 38px;
+    padding: 8px 16px;
+    background-color: #607d8b;
+    border: none;
+}
+svg.postbtn-icon {
+    fill: white;
+    height: 15px;
+}
+
+span.postbtn-text {
+    color: white;
+    margin-left: 4px;
+}
+
+.postbtn:hover {
+    background-color: #cccccc;
+}
+.postbtn:hover span {
+    color: black;
+}
+.postbtn:hover svg {
+    fill: black;
+}
+
+div.post1 {
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+}
+
+.post1 {
+    font-size: 20px;
+    font-weight: 400;
+   margin: 10px 0;
+}
+.post-prof-icon {
+    height: 60px;
+    margin-right: 16px;
+
 }
