@@ -347,13 +347,15 @@ h6.opacity-text {
     opacity: 0.6;
     margin: 10px 0;
     font-weight: 400;
+    /*z-index: -1;*/
+    /*why it does not work?*/
 }
 
 span.status-bar {
     border: 1px solid #cccccc;
     width: 100%;
     display: block;
-    margin: 15px 0;
+    margin: 16px 0;
     padding: 8px 16px;
 }
 
@@ -362,13 +364,14 @@ span.status-bar {
     padding: 8px 16px;
     background-color: #607d8b;
     border: none;
+    margin: 16px 0;
 }
 
 .button-icon {
     fill: white;
     height: 15px;
     width: 15px;
-    /*when i delete the width and keep it to auto it destroys coment icon, why ?*/
+    /*when i delete the width and keep it to auto it destroys comment icon, why ?*/
 }
 
 .button-text {
@@ -387,29 +390,30 @@ span.status-bar {
 .button:hover svg {
     fill: black;
 }
+
 /*why when I took it to main css it broke?*/
 
-div.post1 {
+div.post {
     padding: 16px;
     margin-top: 16px;
 
 
 }
 
-div.post1-top {
+div.post-top {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.post1-name {
+.post-name {
     font-size: 20px;
     font-weight: 400;
     margin: 10px 0;
 
 }
 
-.post1-prof-icon {
+.post-prof-icon {
     height: 60px;
     margin-right: 16px;
 
@@ -424,26 +428,164 @@ div.post1-top {
 
 }
 
-.post1 hr {
+.post hr {
     margin: 20px 0;
     border: none;
     border-top: 1px solid #eeeeee;
 }
 
-.post1 span.post1-text {
-   margin-top: 16px;
-    margin-bottom: 16px;
+.post span.post-text {
+    margin: 16px 0;
 }
 
-.post1-images {
+.post-images {
     display: flex;
     /*gap: 16px;*/
     justify-content: center;
     margin: 16px 0;
     padding: 0 8px;
 }
-.post1-images img {
+
+.post-images img {
     width: 52%;
     /*How to decide the percentage?*/
     padding: 0 8px;
 }
+
+.post2-image {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.post2-image img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.event-block {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-block span {
+    margin: 16px 0;
+}
+
+.event-block img {
+    width: 100%;
+
+}
+
+.event-block .info-button {
+    background-color: #dfe5e8;
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: none;
+}
+.info-button:hover {
+    background-color: #cccccc;
+}
+
+.requests {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.requests span {
+    margin: 16px 0;
+}
+
+#request-avatar {
+    margin: 0;
+}
+
+.requests img {
+    width: 40%;
+}
+
+.requests-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.requestbtn1 {
+    height: 38px;
+    width: 50%;
+    border: none;
+    background-color: #4CAF50;
+    margin: 16px 0;
+    padding: 8px 16px;
+    justify-content: center;
+}
+
+.requestbtn2 {
+    height: 38px;
+    width: 50%;
+    border: none;
+    background-color: #f44336;
+    margin: 16px 0;
+    padding: 8px 16px;
+}
+/*why do percentages not chaneg anything?*/
+.requests-buttons svg {
+    height: 15px;
+    width: 15px;
+    fill: white;
+}
+
+.requestbtn1:hover {
+    background-color: #cccccc;
+
+}
+.requestbtn1:hover svg{
+    fill: #333333;
+}
+
+
+.requestbtn2:hover {
+    background-color: #cccccc;
+}
+
+.requestbtn2:hover svg{
+    fill: #333333;
+}
+
+footer span {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px 0;
+    float: left;
+}
+
+footer div {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+footer.second {
+    height: 56px;
+    padding: 0 16px;
+    background-color: #303e45 ;
+}
+
+footer.second div {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+footer.second span {
+    color: #ffffff;
+    margin: 16px 0;
+}
+
+u {
+    text-decoration: underline;
+    color: white;
+}
+

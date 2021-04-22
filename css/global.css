@@ -43,3 +43,11 @@ img {
 .bg-white {
     background-color: #fff;
 }
+
+footer {
+    background-color: #435761 ;
+    height: 80px;
+    padding: 16px;
+    display: block;
+
+}
