@@ -291,6 +291,7 @@ section.main {
     margin: 16px 0;
     gap: 8px;
 }
+
 /*.hey {*/
 /*    margin-top: 0;*/
 /*}*/
@@ -330,7 +331,8 @@ svg.x {
 .x-box:hover {
     background-color: #cccccc;
 }
-#x-button:checked  .info-box {
+
+#x-button:checked .info-box {
     visibility: hidden;
 }
 
@@ -344,55 +346,104 @@ h6.opacity-text {
     color: #000000;
     opacity: 0.6;
     margin: 10px 0;
-    weig
+    font-weight: 400;
 }
- span.status-bar {
-     border: 1px solid #cccccc;
-     width: 100%;
-     display: block;
-     margin: 15px 0;
-     padding: 8px 16px;
- }
 
-.postbtn {
+span.status-bar {
+    border: 1px solid #cccccc;
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    padding: 8px 16px;
+}
+
+.button {
     height: 38px;
     padding: 8px 16px;
     background-color: #607d8b;
     border: none;
 }
-svg.postbtn-icon {
+
+.button-icon {
     fill: white;
     height: 15px;
+    width: 15px;
+    /*when i delete the width and keep it to auto it destroys coment icon, why ?*/
 }
 
-span.postbtn-text {
+.button-text {
     color: white;
     margin-left: 4px;
 }
 
-.postbtn:hover {
+.button:hover {
     background-color: #cccccc;
 }
-.postbtn:hover span {
+
+.button:hover span {
     color: black;
 }
-.postbtn:hover svg {
+
+.button:hover svg {
     fill: black;
 }
+/*why when I took it to main css it broke?*/
 
 div.post1 {
-    margin: 16px;
     padding: 16px;
-    display: flex;
+    margin-top: 16px;
+
+
 }
 
-.post1 {
+div.post1-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post1-name {
     font-size: 20px;
     font-weight: 400;
-   margin: 10px 0;
+    margin: 10px 0;
+
 }
-.post-prof-icon {
+
+.post1-prof-icon {
     height: 60px;
     margin-right: 16px;
 
+}
+
+.time-text {
+    color: #000000;
+    opacity: 0.6;
+    margin-left: auto;
+    font-size: 14px;
+    margin-bottom: auto;
+
+}
+
+.post1 hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #eeeeee;
+}
+
+.post1 span.post1-text {
+   margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.post1-images {
+    display: flex;
+    /*gap: 16px;*/
+    justify-content: center;
+    margin: 16px 0;
+    padding: 0 8px;
+}
+.post1-images img {
+    width: 52%;
+    /*How to decide the percentage?*/
+    padding: 0 8px;
 }
